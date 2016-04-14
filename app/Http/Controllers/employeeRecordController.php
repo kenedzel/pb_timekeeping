@@ -43,7 +43,7 @@ class employeeRecordController extends Controller
                             
         $time                                           = new Attendance;
         $time->emp_id                                   = $id;
-        $time->time_in                                  = Carbon::now();        
+        $time->time_in                                  = $timein;        
         $time->time_out                                 = '00:00:00';
         $time->date                                     = Carbon::today();    
         $time->save();                                           
